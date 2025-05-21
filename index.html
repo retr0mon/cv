@@ -1,173 +1,175 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Christophe Rancurel - CV</title>
-    <style>
-      :root {
-        --main-color: #000000;
-        --accent-color: #fcee09;
-        --background-color: #ffffff;
-        --font-family: 'Inter', sans-serif;
-      }
 
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christophe Rancurel - CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
 
-      body {
-        font-family: var(--font-family);
-        background-color: var(--background-color);
-        color: var(--main-color);
-        line-height: 1.6;
-        padding: 2rem;
-      }
-
-      main {
-        max-width: 960px;
-        margin: auto;
-        border: 3px solid var(--main-color);
-        padding: 2rem;
-        background-color: var(--accent-color);
-      }
-
-      header {
-        background-color: var(--main-color);
-        color: var(--accent-color);
-        padding: 1rem;
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-
-      header h1 {
-        font-size: 2.5rem;
-        text-transform: uppercase;
-      }
-
-      section {
-        margin-bottom: 2rem;
-      }
-
-      h2 {
-        background-color: var(--main-color);
-        color: var(--accent-color);
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-      }
-
-      .info {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-top: 1rem;
-      }
-
-      .info span {
-        background: var(--main-color);
-        color: var(--accent-color);
-        padding: 0.4rem 0.8rem;
-        font-weight: bold;
-        border-radius: 4px;
-      }
-
-      ul {
-        list-style: disc;
-        margin-left: 2rem;
-      }
-
-      .entry {
-        margin-bottom: 1.5rem;
-      }
-
-      .entry h3 {
-        font-size: 1.1rem;
-        margin-bottom: 0.25rem;
-      }
-
-      footer {
-        text-align: center;
-        font-size: 0.9rem;
-        color: #333;
-        margin-top: 2rem;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <header>
-        <h1>Christophe Rancurel</h1>
-        <div class="info">
-          <span>📍 Nice (06200)</span>
-          <span>📧 rancurel.christophe@gmail.com</span>
-          <span>📞 06 15 79 21 49</span>
-          <span>🌐 github.com/retr0mon</span>
-        </div>
-      </header>
-
-      <section>
-        <h2>Profil</h2>
+<body>
+  <main>
+    <header>
+      <div class="avatar-container">
+        <div class="blob-background"></div>
+        <img src="img/image.png" alt="Robot Avatar" class="robot-avatar" />
+      </div>
+      <div class="presentation">
+        <h1>Salut ! Je suis <span>CHRISTOPHE RANCUREL</span></h1>
+        <h2>un <span>DEVELOPPEUR FULLSTACK</span></h2>
         <p>
-          Développeur full stack avec 10 ans d'expérience, spécialisé en React & React Native. J'ai piloté la refonte et l'évolution d'une application SaaS utilisée par des milliers d'utilisateurs. Je cherche aujourd’hui à mettre mes compétences au service d’une nouvelle équipe produit ambitieuse.
+          Développeur <span>Web</span> et <span>Mobile</span> avec 10 ans d'expérience, spécialisé en React et React
+          Native. J'ai piloté
+          l'évolution d'une application SaaS utilisée par des milliers d'utilisateurs. Je cherche aujourd’hui à mettre
+          mes compétences au service d’une nouvelle équipe ambitieuse.
         </p>
-      </section>
-
-      <section>
-        <h2>Expériences</h2>
-        <div class="entry">
-          <h3>2016 – Aujourd’hui | E2time – Développeur Full Stack</h3>
+      </div>
+    </header>
+    <section class="fill">
+      <h2>Expériences</h2>
+      <article>
+        <div class="content">
+          <h3>Développeur Full Stack et Mobile - <span>E2time.com</span></h3>
+          <p class="date">2023 - aujourd’hui</p>
+          <div>
+            <span class="tag">React Native</span>
+            <span class="tag">Typescript</span>
+            <span class="tag">SlimPHP</span>
+            <span class="tag">API REST</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <p>Application mobile React Native utilisée par 20 000 utilisateurs</p>
           <ul>
-            <li>App SaaS RH – 20k+ utilisateurs</li>
-            <li>Stack : React, React Native, Symfony, MongoDB</li>
-            <li>Refonte web et création de l'app mobile</li>
-            <li>Tests (Jest), CI/CD (Gitlab), Docker</li>
-            <li>Amélioration UX, réduction des bugs, stabilisation mobile</li>
+            <li>Développement et maintenance continue de l’application mobile</li>
+            <li>Interface construite avec Tailwind CSS</li>
+            <li>Mise en place de tests unitaires (Jest) et pipelines CI/CD (Gitlab CI), conteneurisation avec Docker
+            </li>
+          </ul>
+          <div>
+            <span class="tag">JAVA</span>
+            <span class="tag">NodeJS</span>
+            <span class="tag">SQLite</span>
+          </div>
+          <p>Application Android Native pour un parc de 100 pointeuses</p>
+          <ul>
+            <li>Maintenance de l'application existante</li>
+            <li>Gestion de l'administration pour intervenir sur chaque pointeuse à distance</li>
+            <li>Ajout de fonctionnalités permettant d'intéragir avec les différents éléments de l'appareil (USB, NFC,
+              RFID, CARTE SD, etc)</li>
           </ul>
         </div>
-        <div class="entry">
-          <h3>2015 – 2016 | La langue du caméléon – Développeur web</h3>
+        <aside>
+          <div class="experience_container"><img src="img/experiences.png" alt=""></div>
+        </aside>
+      </article>
+      <article>
+        <aside>
+          <div class="experience_container"><img src="img/react.png" alt=""></div>
+        </aside>
+        <div class="content">
+          <p class="date">2016 - 2023</p>
+          <div>
+            <span class="tag">React</span>
+            <span class="tag">Redux</span>
+          </div>
+          <p>React App pour une administration interne</p>
+          <ul>
+            <li>Élaboration d’un tableau de bord en Material Design (Material UI)</li>
+          </ul>
+          <div>
+            <span class="tag">Twig</span>
+            <span class="tag">PHP</span>
+            <span class="tag">SASS</span>
+            <span class="tag">JS</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <p>SaaS de Solution RH adopté par 450 entreprises</p>
+          <ul>
+            <li>Refonte de l’interface utilisateur selon la méthodologie Atomic Design</li>
+            <li>Création de gabarits avec Twig</li>
+            <li>Mise en place d'outils de compilation (Webpack), de versioning (Git)</li>
+            <li>Réduction significative des bugs et amélioration de la stabilité produit</li>
+          </ul>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <h3>Développeur web - <span>La langue du caméléon</span></h3>
+          <p class="date">2015 - 2016</p>
           <ul>
             <li>Intégration HTML/CSS, animations jQuery</li>
             <li>Développement PHP, CMS</li>
           </ul>
-        </div>
-        <div class="entry">
-          <h3>2014 | Meridia solutions – Stage développeur web</h3>
+          <h3>Stage développeur web - <span>Meridia solutions</span></h3>
+          <p class="date">2014</p>
           <ul>
             <li>Développement PHP, intégration front</li>
           </ul>
         </div>
-      </section>
+        <aside>
+          <div class="experience_container"><img src="img/baby.png" alt=""></div>
+        </aside>
+      </article>
+    </section>
+    <section>
+      <h2>Compétences Techniques</h2>
+      <div class="cards">
+        <div class="card">
+          <span class="icon">💻</span>
+          <h3>Frontend</h3>
+          <p>React, React Native, Svelte, Tailwind CSS, TypeScript, Sass, Webpack, Vite</p>
+        </div>
+        <div class="card">
+          <span class="icon">🖥️</span>
+          <h3>Backend</h3>
+          <p>Symfony, SlimPHP, Node.js, Express, MySQL, SQLite, REST</p>
+        </div>
+        <div class="card">
+          <span class="icon">🧪</span>
+          <h3>Tests & Automatisation</h3>
+          <p>Jest, React Native Testing Library, Puppeteer, Fastlane, ESLint, Prettier, Husky</p>
+        </div>
+        <div class="card">
+          <span class="icon">⚙️</span>
+          <h3>CI/CD & DevOps</h3>
+          <p>Docker, GitLab CI/CD, GitHub Actions, Fastlane, Cron, Nginx, pm2</p>
+        </div>
+        <div class="card">
+          <span class="icon">🛠️</span>
+          <h3>Outils & Productivité</h3>
+          <p>Git, Figma, Postman, VSCode, Slack, Microsoft Teams, Trello, Chrome DevTools</p>
+        </div>
+        <div class="card">
+          <span class="icon">🖱️</span>
+          <h3>Systèmes d’exploitation</h3>
+          <p>Ubuntu, macOS, Windows</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Formation</h2>
+      <ul>
+        <li>M2 Nouvelles Technologies et Direction de Projets – MIAGE, Sophia-Antipolis – 2016</li>
+        <li>M1 Info-Com – Ingémédia, Toulon – 2015</li>
+        <li>LP Informatique Multimédia Appliquée – Saint-Jean d'Angély, Nice – 2014</li>
+        <li>DUT Techniques de Commercialisation – IUT, Nice – 2013</li>
+      </ul>
+    </section>
+    <section class="info">
+      <span>📍 Nice (06200)</span>
+      <span>📧 rancurel.christophe@gmail.com</span>
+      <span>📞 06 15 79 21 49</span>
+      <span>🌐 github.com/retr0mon</span>
+    </section>
+    <footer>
+      &copy; 2025 Christophe Rancurel — CV personnel
+    </footer>
+  </main>
+</body>
 
-      <section>
-        <h2>Compétences</h2>
-        <ul>
-          <li><strong>Frontend :</strong> React, React Native, Svelte, Tailwind, Webpack, Jest, Puppeteer, Typescript, Sass</li>
-          <li><strong>Backend :</strong> Symfony, SlimPHP, NodeJS, MySQL, MongoDB</li>
-          <li><strong>DevOps :</strong> Docker, Gitlab CI, Cron</li>
-          <li><strong>Outils :</strong> Git, Figma, Postman</li>
-          <li><strong>OS :</strong> Ubuntu, MacOS, Windows</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Formation</h2>
-        <ul>
-          <li>M2 Nouvelles Technologies et Direction de Projets – MIAGE, Sophia-Antipolis – 2016</li>
-          <li>M1 Info-Com – Ingémédia, Toulon – 2015</li>
-          <li>LP Informatique Multimédia Appliquée – Saint-Jean d'Angély, Nice – 2014</li>
-          <li>DUT Techniques de Commercialisation – IUT, Nice – 2013</li>
-        </ul>
-      </section>
-
-      <footer>
-        &copy; 2025 Christophe Rancurel — CV personnel
-      </footer>
-    </main>
-  </body>
 </html>

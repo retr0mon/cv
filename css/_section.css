@@ -1,0 +1,75 @@
+section {
+  padding: 2rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 2rem 0.5rem;
+}
+
+section.fill {
+  background-color: var(--color-secondary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
+section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+section h3 span {
+  color: var(--color-primary);
+}
+
+section article {
+  display: flex;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+section article aside {
+  align-self: center;
+  flex: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  section article {
+    flex-direction: column-reverse;
+  }
+  section article:nth-child(2n) {
+    flex-direction: column;
+  }
+}
+
+section article aside .experience_container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+section article aside .experience_container img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+section article .content {
+  flex: 1;
+  border-left: 2px solid var(--color-primary);
+  padding: 0 2rem;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+
+section .date {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}

@@ -1,0 +1,76 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+header .avatar-container {
+  position: relative;
+  width: 600px;
+  max-width: 100%;
+}
+
+header .avatar-container .blob-background {
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  clip-path: shape(
+    from 66.12% 90.73%,
+    curve to 50.18% 92.75% with 57.68% 90.27%,
+    curve to 34.7% 93.44% with 42.67% 95.23%,
+    curve to 24.09% 83.14% with 26.72% 91.65%,
+    curve to 16.23% 69.72% with 21.46% 74.63%,
+    curve to 7.71% 57.73% with 11% 64.82%,
+    curve to 3.94% 42.21% with 4.42% 50.64%,
+    curve to 12.19% 30.04% with 3.45% 33.79%,
+    curve to 22.78% 16.87% with 20.92% 26.28%,
+    curve to 33.22% 7.24% with 24.64% 7.45%,
+    curve to 48.78% 10.72% with 41.8% 7.03%,
+    curve to 62.33% 15.29% with 55.76% 14.41%,
+    curve to 74.78% 19.86% with 68.91% 16.17%,
+    curve to 86.03% 28.91% with 80.66% 23.54%,
+    curve to 92.9% 41.83% with 91.4% 34.27%,
+    curve to 90.72% 56.14% with 94.4% 49.38%,
+    curve to 84.99% 69.88% with 87.04% 62.9%,
+    curve to 78.75% 84.03% with 82.94% 76.86%,
+    curve to 66.12% 90.73% with 74.56% 91.2%
+  );
+  z-index: 0;
+}
+
+header .avatar-container .robot-avatar {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+header .presentation {
+  flex: 1;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+header .presentation h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header .presentation h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+header .presentation p {
+  line-height: 1.6;
+}
+header .presentation p span {
+  color: var(--color-primary);
+}
+
+header .presentation span {
+  color: var(--color-primary);
+}

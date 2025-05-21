@@ -1,0 +1,19 @@
+@import url("_header.css");
+@import url("_section.css");
+@import url("_cards.css");
+@import url("_tag.css");
+
+/* Global styles */
+:root {
+  --color-primary: #00adb5;
+  --color-secondary: #393e46;
+  --color-background: #222831;
+  --color-text: #eeeeee;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: "Roboto", Arial, sans-serif;
+}
